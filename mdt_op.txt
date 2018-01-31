@@ -1,0 +1,33 @@
+2		mov esi,%1
+3	%%pqr:	mov edi,%2
+4		add esi,edi
+5		mov eax,esi
+6		mysub esi,edi
+7		jmp %%pqr
+8		%endmacro
+11		mov esi,%1
+12	%%xyz:	mov edi,%2
+13		sub esi,edi		
+14		mov eax,esi
+15		mymul esi
+16		jmp %%xyz
+17		%endmacro
+20		mov esi,%1
+21		mov eax,esi
+22		mov ecx,1
+23	%%abc:  
+24		mov eax,esi
+25		xor edx,edx
+26		mul ecx
+27		pusha
+28		push eax
+29		push msg
+30		call printf
+31		add esp,8
+32		popa
+33		inc ecx
+34		xor eax,eax
+35		cmp ecx,10
+36		jle %%abc
+37		mymul 5
+38	%endmacro

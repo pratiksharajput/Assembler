@@ -1,0 +1,22 @@
+eax reg#13
+ebx reg#23
+ecx reg#33
+edx reg#43
+ebp reg#53
+esp reg#63
+esi reg#73
+edi reg#83
+
+ax  reg#16
+bx  reg#26
+cx  reg#36
+dx  reg#46
+
+ah  reg#18
+al  reg#28
+bh  reg#38
+bl  reg#48
+ch  reg#58
+cl  reg#68
+dh  reg#78
+dl  reg#88
